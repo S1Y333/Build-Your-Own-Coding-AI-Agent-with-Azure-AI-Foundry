@@ -23,7 +23,7 @@ def chat_with_agent(agent_id):
         print(f"Created message, message ID: {message.id}")
 
         # Process the request
-        run = project_client.agents.create_and_process_run(thread_id=thread.id, assistant_id=agent_id)
+        run = project_client.agents.create_and_process_run(thread_id=thread.id, agent_id=agent_id)
         print(f"Created run, run ID: {run.id}")
 
         # Fetch responses
